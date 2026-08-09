@@ -1,60 +1,89 @@
-<!doctype html>
+```html
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Meigetsu</title>
-  <meta name="description" content="盟月">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 80px 30px;
+        }
+
+        header {
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 400;
+        }
+
+        .description {
+            margin-top: 20px;
+            line-height: 1.7;
+        }
+
+        nav {
+            margin-top: 50px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-right: 30px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
+
 <body>
-  <div class="scanlines"></div>
 
-  <header class="nav">
-    <a class="brand" href="#">盟月<span>/</span>MEIGETSU</a>
-    <nav>
-      <a href="#games">GAMES</a>
-      <a href="#about">ABOUT ME</a>
-    </nav>
-  </header>
+    <main>
 
-  <main>
-    <section class="hero">
-      <div class="hero-copy">
-        <div class="eyebrow">header</div>
-        <h1>header 1</h1>
-        <p class="jp">盟月</p>
-        <div class="rule"></div>
-        <p class="intro">placeholder</p>
-        <!-- Replace this text with your own group description. -->
-      </div>
+        <!-- Header -->
+        <header>
+            <h1></h1>
+        </header>
 
-      <div class="hero-art">
-        <div class="art-frame">
-          <img src="meigetsu-art.png" alt="Meigetsu artwork">
-          <div class="corner c1">MG / 01</div>
-          <div class="corner c2">盟月</div>
-          <div class="corner c3">PLAY / REPEAT</div>
-        </div>
-      </div>
-    </section>
-    
-    <section id="about" class="about">
-      <div class="section-label">03 / ABOUT</div>
-      <div class="about-grid">
-        <h2>ABOUT<br><em>ME</em></h2>
-        <div class="about-copy">
-          <p></p>
-          <p></p>
-          <a class="about-link" href="#about">/ READ MORE <span>↗</span></a>
-        </div>
-      </div>
-    </section>
-  </main>
+        <!-- Description -->
+        <section class="description">
+            <p></p>
+        </section>
 
-  <footer>
-    <span></span>
-    <span></span>
-  </footer>
+        <!-- Subpages -->
+        <nav>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </nav>
+
+    </main>
+
 </body>
 </html>
+```
