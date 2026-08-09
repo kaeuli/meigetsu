@@ -58,6 +58,27 @@
         nav a:hover {
             text-decoration: underline;
         }
+        .page {
+    display: none;
+    opacity: 0;
+}
+
+.page.active {
+    display: block;
+    animation: fadeIn 0.25s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
     </style>
 </head>
 
@@ -98,6 +119,27 @@
     </section>
 
     </main>
+
+<script>
+    function showPage() {
+        let page = location.hash.substring(1) || "home";
+
+        document.querySelectorAll(".page").forEach(function(element) {
+            element.classList.remove("active");
+        });
+
+        let selected = document.getElementById(page);
+
+        if (selected) {
+            selected.classList.add("active");
+        } else {
+            document.getElementById("home").classList.add("active");
+        }
+    }
+
+    window.addEventListener("hashchange", showPage);
+    showPage();
+</script>
 
 </body>
 </html>
